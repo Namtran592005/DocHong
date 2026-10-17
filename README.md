@@ -176,6 +176,12 @@ Con số "tải trễ" phải bằng 0.
 > chế độ headless — nên `npm run check:images` chỉ đo được nguyên nhân (ảnh lazy
 > nằm trong khung nhìn), còn cảnh báo thì cần bạn tự mở Edge xác nhận.
 
+## Giấy phép
+
+Mã nguồn dùng giấy phép [MIT](LICENSE).
+
+Giấy phép này **chỉ phủ mã nguồn của dự án**. Dữ liệu truyện, bản dịch và hình ảnh thuộc về tác giả, nhà xuất bản và các nhóm scanlation — không nằm trong phạm vi MIT. Dự án chỉ xây dựng giao diện đọc.
+
 ## Lưu ý bản quyền
 
 Dữ liệu, bản dịch và hình ảnh thuộc về tác giả, nhà xuất bản và các nhóm scanlation. Website chỉ cung cấp giao diện đọc và ghi công nhận đầy đủ nguồn. Không quảng cáo, không dịch vụ trả phí — theo chính sách sử dụng API của MangaDex.

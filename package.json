@@ -3,6 +3,8 @@
   "private": true,
   "version": "1.0.0",
   "description": "Web doc truyen chuyen nghiep - frontend Next.js + backend proxy MangaDex API",
+  "license": "MIT",
+  "author": "Namtran592005",
   "workspaces": [
     "client",
     "server"

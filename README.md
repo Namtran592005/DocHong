@@ -1,15 +1,15 @@
 <p align="center">
-  <img src="docs/logo-256.png" alt="Đọc Hồng" width="128">
+  <img src="docs/logo-256.png" alt="Đọc Hông" width="128">
 </p>
 
-<h1 align="center">Đọc Hồng</h1>
+<h1 align="center">Đọc Hông</h1>
 
 <p align="center">
   Website đọc truyện trực tuyến, ưu tiên truyện đã có bản Việt hoá.
 </p>
 
 <p align="center">
-  <img src="docs/logo.webp" alt="Doc Hồng" width="420">
+  <img src="docs/logo.webp" alt="Doc Hông" width="420">
 </p>
 
 ---

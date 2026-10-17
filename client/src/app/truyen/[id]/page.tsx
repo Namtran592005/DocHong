@@ -56,7 +56,7 @@ export async function generateMetadata({
     description,
     alternates: { canonical: `/truyen/${id}` },
     openGraph: {
-      title: `${title} — Đọc Hong`,
+      title: `${title} — Đọc Hông`,
       description,
       type: 'article',
       images: image ? [`${siteUrl}${image}`] : undefined,

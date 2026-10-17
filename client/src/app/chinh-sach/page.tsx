@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Chính sách',
-  description: 'Chính sách sử dụng, quyền riêng tư và nguồn dữ liệu của Đọc Hong.',
+  description: 'Chính sách sử dụng, quyền riêng tư và nguồn dữ liệu của Đọc Hông.',
 };
 
 const UPDATED = '01/01/2026';

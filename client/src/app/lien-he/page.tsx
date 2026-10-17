@@ -5,7 +5,7 @@ import { CONTACT_TELEGRAM, CONTACT_TELEGRAM_URL } from '@/lib/site-config';
 
 export const metadata: Metadata = {
   title: 'Liên hệ',
-  description: 'Liên hệ với Đọc Hong qua Telegram.',
+  description: 'Liên hệ với Đọc Hông qua Telegram.',
 };
 
 export default function ContactPage() {

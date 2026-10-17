@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Giới thiệu',
-  description: 'Đọc Hong là website đọc truyện trực tuyến, ưu tiên truyện đã có bản Việt hoá.',
+  description: 'Đọc Hông là website đọc truyện trực tuyến, ưu tiên truyện đã có bản Việt hoá.',
 };
 
 export default function AboutPage() {
@@ -11,7 +11,7 @@ export default function AboutPage() {
       <header className="max-w-2xl">
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">Giới thiệu</h1>
         <p className="mt-3 text-fg-muted">
-          Đọc Hong là nơi tập hợp truyện tranh đã được dịch và bản dịch đang được cập nhật, giao diện
+          Đọc Hông là nơi tập hợp truyện tranh đã được dịch và bản dịch đang được cập nhật, giao diện
           gọn nhẹ để đọc được trên mọi thiết bị.
         </p>
       </header>

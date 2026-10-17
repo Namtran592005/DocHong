@@ -25,7 +25,7 @@ export default function DmcaPage() {
         <section>
           <h2 className="text-lg font-bold text-fg">1. Vai trò của chúng tôi</h2>
           <p className="mt-2">
-            Đọc Hong là dịch vụ đọc truyện trực tuyến. Chúng tôi không tự đăng tải, không sở hữu và
+            Đọc Hông là dịch vụ đọc truyện trực tuyến. Chúng tôi không tự đăng tải, không sở hữu và
             không kiểm duyệt nội dung; toàn bộ truyện, bản dịch và hình ảnh được lấy từ API công khai
             của MangaDex. Vì vậy chúng tôi thường chỉ có thể gỡ nội dung theo yêu cầu của chủ sở hữu
             quyền hoặc theo yêu cầu của chính dịch vụ nguồn.

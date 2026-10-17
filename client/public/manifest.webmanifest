@@ -1,0 +1,18 @@
+{
+  "name": "Đọc Hong — Đọc truyện Việt hoá",
+  "short_name": "Đọc Hong",
+  "description": "Đọc truyện trinh thám, hành động, lãng mạn và đời thường miễn phí. Kho truyện Việt hoá cập nhật liên tục.",
+  "lang": "vi",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b0d12",
+  "theme_color": "#0b0d12",
+  "icons": [
+    { "src": "/favicon-64.png", "sizes": "64x64", "type": "image/png" },
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

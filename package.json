@@ -1,0 +1,32 @@
+{
+  "name": "mangadex-web",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Web doc truyen chuyen nghiep - frontend Next.js + backend proxy MangaDex API",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -n SERVER,CLIENT -c cyan,magenta \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "npm run dev --workspace server",
+    "dev:client": "npm run dev --workspace client",
+    "build": "npm run build --workspace client && npm run precompress",
+    "start": "node scripts/start.mjs",
+    "start:server": "node server/src/index.js",
+    "start:client": "node scripts/serve.mjs",
+    "precompress": "node scripts/precompress.mjs",
+    "release": "npm run build && node scripts/build-release.mjs",
+    "check:images": "node scripts/check-lazy-viewport.mjs",
+    "logo": "node scripts/generate-logo.mjs",
+    "screenshots": "node scripts/screenshots.mjs",
+    "measure": "node scripts/measure.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "sharp": "^0.35.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

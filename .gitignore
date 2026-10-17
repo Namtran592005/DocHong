@@ -1,0 +1,25 @@
+node_modules/
+.next/
+out/
+build/
+dist/
+
+.env
+.env.local
+.env.*.local
+
+npm-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db
+
+*.tsbuildinfo
+next-env.d.ts.bak
+.vercel
+
+# Thư mục hồ sơ trình duyệt tạo khi chụp ảnh / kiểm tra giao diện
+.edge-profile/
+
+# Bản phát hành đóng gói và cache npm tạm khi build
+release/
+.npm-cache/

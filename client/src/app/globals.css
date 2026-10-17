@@ -1,0 +1,279 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+/* ------------------------------------------------------------------ tokens */
+
+:root,
+[data-theme='light'] {
+  --bg: #eef3fb;
+  --surface: #ffffff;
+  --surface-2: #f4f7fc;
+  --surface-3: #e3eaf6;
+  --fg: #0d1526;
+  --fg-muted: #4c5a73;
+  --fg-subtle: #7c8aa3;
+  --line: #dbe3f0;
+  --line-strong: #c2cee0;
+  --accent: #1d4ed8;
+  --accent-hover: #1740b0;
+  --accent-fg: #ffffff;
+  --accent-soft: #e4ecff;
+  --ok: #0b8a5f;
+  --warn: #b4690e;
+  --danger: #c0392f;
+  /* Màu thương hiệu: sáng thì xanh dương, tối thì đen than */
+  --brand: #1d4ed8;
+  --brand-deep: #16389c;
+  --brand-fg: #ffffff;
+  --brand-muted: #c9d8ff;
+  --shadow-card: 0 1px 2px rgb(13 21 38 / 0.05), 0 10px 28px -14px rgb(13 21 38 / 0.22);
+  --shadow-pop: 0 14px 44px -14px rgb(13 21 38 / 0.3);
+  --reader-bg: #1b1e26;
+}
+
+[data-theme='dark'] {
+  --bg: #0b0d12;
+  --surface: #12151d;
+  --surface-2: #191d27;
+  --surface-3: #232838;
+  --fg: #e8ebf2;
+  --fg-muted: #9aa3b4;
+  --fg-subtle: #6b7488;
+  --line: #232838;
+  --line-strong: #333b4f;
+  --accent: #6d8dff;
+  --accent-hover: #86a0ff;
+  --accent-fg: #0b0d12;
+  --accent-soft: #1a2140;
+  --ok: #3ddc97;
+  --warn: #f0b429;
+  --danger: #ff6b6b;
+  --brand: #0f131d;
+  --brand-deep: #0a0d15;
+  --brand-fg: #f4f6fb;
+  --brand-muted: #99a3b6;
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.4), 0 12px 32px -16px rgb(0 0 0 / 0.7);
+  --shadow-pop: 0 20px 60px -20px rgb(0 0 0 / 0.8);
+  --reader-bg: #06070a;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-fg-subtle: var(--fg-subtle);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-fg: var(--accent-fg);
+  --color-accent-soft: var(--accent-soft);
+  --color-ok: var(--ok);
+  --color-warn: var(--warn);
+  --color-danger: var(--danger);
+  --color-reader: var(--reader-bg);
+
+  --color-brand: var(--brand);
+  --color-brand-deep: var(--brand-deep);
+  --color-brand-fg: var(--brand-fg);
+  --color-brand-muted: var(--brand-muted);
+
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-display: var(--font-display), var(--font-body), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-card: 14px;
+
+  --animate-fade-in: fade-in 0.28s ease both;
+  --animate-shimmer: shimmer 1.4s linear infinite;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  from {
+    background-position: -160% 0;
+  }
+  to {
+    background-position: 160% 0;
+  }
+}
+
+/* ------------------------------------------------------------------- base */
+
+* {
+  border-color: var(--line);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  /* Tránh thanh cuộn ngang do một phần tử dài bị tràn ra ngoài khung nhìn */
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-wrap: break-word;
+}
+
+/* Tiêu đề và tên thương hiệu dùng font riêng cho nét khác biệt */
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.015em;
+}
+
+.font-brand {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+/* Header và chân trang lấy màu thương hiệu: sáng thì xanh dương */
+.surface-brand {
+  background-color: var(--brand);
+  color: var(--brand-fg);
+  border-color: color-mix(in srgb, var(--brand) 70%, black);
+}
+
+.surface-brand-deep {
+  background-color: var(--brand-deep);
+  color: var(--brand-fg);
+  border-color: color-mix(in srgb, var(--brand-deep) 70%, black);
+}
+
+.on-brand {
+  color: var(--brand-fg);
+}
+
+.on-brand-muted {
+  color: var(--brand-muted);
+}
+
+/* Nút bấm trên nền thương hiệu */
+.on-brand-btn {
+  border: 1px solid color-mix(in srgb, var(--brand-fg) 35%, transparent);
+  color: var(--brand-fg);
+  background-color: color-mix(in srgb, var(--brand-fg) 10%, transparent);
+}
+
+.on-brand-btn:hover {
+  background-color: color-mix(in srgb, var(--brand-fg) 20%, transparent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-fg);
+}
+
+/* Thanh cuon gon cho ca desktop va mobile */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--line-strong);
+  border-radius: 999px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ---------------------------------------------------------------- utilities */
+
+@utility container-page {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  max-width: 1440px;
+
+  @media (width >= 640px) {
+    padding-inline: 1.5rem;
+  }
+  @media (width >= 1024px) {
+    padding-inline: 2rem;
+  }
+}
+
+@utility card-surface {
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+@utility skeleton {
+  background-image: linear-gradient(
+    90deg,
+    var(--surface-2) 25%,
+    var(--surface-3) 37%,
+    var(--surface-2) 63%
+  );
+  background-size: 200% 100%;
+  animation: var(--animate-shimmer);
+  border-radius: 8px;
+}
+
+@utility line-clamp-2-safe {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Logo không bọc khung nền. Vì nét viền của logo là màu đen, đặt lên giao diện
+   tối sẽ bị chìm, nên thêm một quầng sáng mờ thay vì dựng hộp trắng. */
+.logo-glow {
+  filter: drop-shadow(0 1px 10px rgb(255 255 255 / 0.42));
+}
+
+[data-theme='light'] .logo-glow {
+  filter: drop-shadow(0 1px 6px rgb(16 20 28 / 0.16));
+}
+
+/* An thanh dieu huong tren mobile de noi dung khong bi che */
+@media (width < 768px) {
+  body {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

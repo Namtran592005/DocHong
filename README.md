@@ -8,10 +8,6 @@
   Website đọc truyện trực tuyến, ưu tiên truyện đã có bản Việt hoá.
 </p>
 
-<p align="center">
-  <img src="docs/logo.webp" alt="Doc Hông" width="420">
-</p>
-
 ---
 
 ## Ảnh chụp

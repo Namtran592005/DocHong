@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/logo-256.png" alt="Đọc Hồng" width="96">
+  <img src="docs/logo-256.png" alt="Đọc Hồng" width="128">
 </p>
 
 <h1 align="center">Đọc Hồng</h1>
@@ -7,6 +7,31 @@
 <p align="center">
   Website đọc truyện trực tuyến, ưu tiên truyện đã có bản Việt hoá.
 </p>
+
+<p align="center">
+  <img src="docs/logo.webp" alt="Doc Hồng" width="420">
+</p>
+
+---
+
+## Ảnh chụp
+
+| Trang chủ | Bảng xếp hạng |
+|---|---|
+| <img src="docs/screenshots/trang-chu.png" alt="Trang chủ" width="480"> | <img src="docs/screenshots/bang-xep-hang.png" alt="Bảng xếp hạng" width="480"> |
+
+| Trang đọc | Chi tiết truyện |
+|---|---|
+| <img src="docs/screenshots/trang-doc.png" alt="Trang đọc" width="480"> | <img src="docs/screenshots/chi-tiet-truyen.png" alt="Chi tiết truyện" width="480"> |
+
+<details>
+<summary>Xem thêm (bản di động)</summary>
+
+| Trang chủ | Trang đọc | Tìm kiếm |
+|---|---|---|
+| <img src="docs/screenshots/mobile-trang-chu.png" alt="Mobile trang chủ" width="170"> | <img src="docs/screenshots/mobile-trang-doc.png" alt="Mobile trang đọc" width="170"> | <img src="docs/screenshots/mobile-tim-kiem.png" alt="Mobile tìm kiếm" width="170"> |
+
+</details>
 
 ---
 

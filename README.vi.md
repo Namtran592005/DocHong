@@ -34,6 +34,10 @@ Xây dựng trên MangaDex với máy chủ proxy và cache tự dựng.
 |:--:|:--:|
 | <img src="docs/screenshots/tim-kiem-loc.png" alt="Tìm kiếm có bộ lọc" width="480"> | <img src="docs/screenshots/the-loai.png" alt="Duyệt thể loại" width="480"> |
 
+| Đánh giá cao | Liên hệ |
+|:--:|:--:|
+| <img src="docs/screenshots/danh-gia-cao.png" alt="Bảng đánh giá cao" width="480"> | <img src="docs/screenshots/lien-he.png" alt="Trang liên hệ" width="480"> |
+
 <details>
 <summary>Xem thêm (bản di động)</summary>
 
@@ -317,4 +321,4 @@ Mã nguồn dùng giấy phép [MIT](LICENSE).
 
 Giấy phép này **chỉ phủ mã nguồn của dự án**. Dữ liệu truyện, bản dịch và hình ảnh thuộc về tác giả, nhà xuất bản và các nhóm scanlation — không nằm trong phạm vi MIT. DocHong chỉ xây dựng giao diện đọc. Không quảng cáo, không dịch vụ trả phí.
 
-Khiếu nại bản quyền: <https://t.me/namtran5905>
+Khiếu nại bản quyền: [@Namtran592005](https://github.com/Namtran592005)

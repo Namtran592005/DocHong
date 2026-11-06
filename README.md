@@ -34,6 +34,10 @@ Built on MangaDex with a self-hosted proxy and cache.
 |:--:|:--:|
 | <img src="docs/screenshots/tim-kiem-loc.png" alt="Search with filters" width="480"> | <img src="docs/screenshots/the-loai.png" alt="Genre browser" width="480"> |
 
+| Top rated | Contact |
+|:--:|:--:|
+| <img src="docs/screenshots/danh-gia-cao.png" alt="Top rated board" width="480"> | <img src="docs/screenshots/lien-he.png" alt="Contact page" width="480"> |
+
 <details>
 <summary>More screenshots (mobile)</summary>
 
@@ -317,4 +321,4 @@ The source code is released under the [MIT License](LICENSE).
 
 This license **covers the project's source code only**. Manga data, translations and images belong to their authors, publishers and scanlation groups — they are not covered by MIT. DocHong only builds a reading interface. No ads, no paid service.
 
-Copyright complaints: <https://t.me/namtran5905>
+Copyright complaints: [@Namtran592005](https://github.com/Namtran592005)
